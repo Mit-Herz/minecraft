@@ -13,7 +13,7 @@ services:
       - proxy
     environment:
       SPIGET_RESOURCES: "109697"
-      TYPE: "BUKKIT"
+      TYPE: "PAPER"
       EULA: "True"
       DIFFICULTY: "hard"
       ENABLE_QUERY: "false"
