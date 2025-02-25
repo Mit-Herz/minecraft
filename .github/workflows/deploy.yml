@@ -31,7 +31,7 @@ jobs:
           context: .
           file: ./docker/Dockerfile
           push: true
-          tags: snooops/wedding:${{ env.shorttag }}
+          tags: snooops/neverendranche:${{ env.shorttag }}
 
       - name: Setup docker-compose.yml
         uses: rondefreitas/jinja2-action@v1.2.3
