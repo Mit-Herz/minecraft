@@ -1,1 +1,0 @@
-FROM itzg/minecraft-server:2025.2.1
