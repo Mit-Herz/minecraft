@@ -4,13 +4,37 @@ networks:
 
 services:
   minecraft:
-    image: snooops/neverendranche:96ea960
+    image: itzg/minecraft-server:2025.2.1
     ports:
       - '25565:25565'
     volumes:
       - neverendranche:/data:rw
     networks:
       - proxy
+    environment:
+      MODRINTH_PROJECTS: 34T8oVNY"
+      EULA: "True"
+      DIFFICULTY: "hard"
+      ENABLE_QUERY: "false"
+      MAX_PLAYERS: "10"
+      ALLOW_NETHER: "true"
+      ANNOUNCE_PLAYER_ACHIEVEMENTS: "true"
+      FORCE_GAMEMODE: "true"
+      GENERATE_STRUCTURES: "true"
+      HARDCORE: "false"
+      SPAWN_ANIMALS: "true"
+      SPAWN_NPCS: "true"
+      SPAWN_PROTECTION: 1
+      SEED: 987126986501
+      MODE: "survival"
+      PVP: "true"
+      ALLOW_FLIGHT: "false"
+      SERVER_NAME: "Neverendranche"
+      WHITELIST: |
+        Decoup
+        The Croc9338
+        KingIngeborg123
+
     labels:
       backup: true
       traefik.enable: true
