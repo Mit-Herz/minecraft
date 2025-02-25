@@ -32,8 +32,8 @@ services:
       SERVER_NAME: "Neverendranche"
       WHITELIST: |
         Decoup
-        The Croc9338
-        KingIngeborg123
+        TheCroc420
+        KingIngeborg
 
     labels:
       backup: true
