@@ -12,7 +12,7 @@ services:
     networks:
       - proxy
     environment:
-      MODRINTH_PROJECTS: "fabric-api:34T8oVNY"
+      SPIGET_RESOURCES: "109697"
       EULA: "True"
       DIFFICULTY: "hard"
       ENABLE_QUERY: "false"
