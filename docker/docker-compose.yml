@@ -13,6 +13,7 @@ services:
       - proxy
     environment:
       SPIGET_RESOURCES: "109697"
+      TYPE: "SPIGOT"
       EULA: "True"
       DIFFICULTY: "hard"
       ENABLE_QUERY: "false"
