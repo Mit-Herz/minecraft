@@ -12,7 +12,7 @@ services:
     networks:
       - proxy
     environment:
-      MODRINTH_PROJECTS: 34T8oVNY"
+      MODRINTH_PROJECTS: "34T8oVNY"
       EULA: "True"
       DIFFICULTY: "hard"
       ENABLE_QUERY: "false"
