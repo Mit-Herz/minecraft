@@ -35,6 +35,7 @@ services:
         Decoup
         TheCroc420
         KingIngeborg
+        derShwabe
 
     labels:
       backup: true
