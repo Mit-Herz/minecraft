@@ -12,7 +12,7 @@ services:
     networks:
       - proxy
     environment:
-      SPIGET_RESOURCES: "109697"
+      MODRINTH_PROJECTS: "34T8oVNY"
       TYPE: "PAPER"
       EULA: "True"
       DIFFICULTY: "hard"
