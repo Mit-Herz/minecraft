@@ -4,7 +4,7 @@ networks:
 
 services:
   minecraft:
-    image: snooops/neverendranche:9321bf7
+    image: snooops/neverendranche:be84f28
     ports:
       - '25565:25565'
     volumes:
