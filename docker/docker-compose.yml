@@ -16,7 +16,7 @@ services:
       TYPE: "PAPER"
       EULA: "True"
       MEMORY: "2G"
-      DIFFICULTY: "hard"
+      DIFFICULTY: "normal"
       ENABLE_QUERY: "false"
       MAX_PLAYERS: "10"
       ALLOW_NETHER: "true"
