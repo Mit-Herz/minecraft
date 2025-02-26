@@ -15,6 +15,7 @@ services:
       # MODRINTH_PROJECTS: "34T8oVNY:beta"
       TYPE: "PAPER"
       EULA: "True"
+      MEMORY: "2G"
       DIFFICULTY: "hard"
       ENABLE_QUERY: "false"
       MAX_PLAYERS: "10"
