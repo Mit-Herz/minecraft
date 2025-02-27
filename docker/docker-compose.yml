@@ -38,6 +38,7 @@ services:
         KingIngeborg
         derShwabe
         McPaul10
+        Skornexs
 
     labels:
       backup: true
