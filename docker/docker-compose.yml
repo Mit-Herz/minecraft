@@ -39,6 +39,7 @@ services:
         derShwabe
         McPaul10
         Skornexs
+        j03rn
 
     labels:
       backup: true
