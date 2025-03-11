@@ -56,7 +56,7 @@ services:
       traefik.http.routers.neverendranche-secure.tls: true
       traefik.http.routers.neverendranche-secure.tls.certresolver: http
       traefik.http.routers.neverendranche-secure.service: neverendranche
-      traefik.http.routers.neverendranche-secure.middlewares: secHeaders@file
+      traefik.http.routers.neverendranche-secure.middlewares: secHeaders
       traefik.http.services.neverendranche.loadbalancer.server.port: 8080
       traefik.docker.network: proxy
 
