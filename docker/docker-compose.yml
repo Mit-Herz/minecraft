@@ -12,7 +12,7 @@ services:
     networks:
       - proxy
     environment:
-      MODRINTH_PROJECTS: "34T8oVNY:beta"
+      MODRINTH_PROJECTS: "34T8oVNY:beta,fALzjamp:latest"
       TYPE: "PAPER"
       EULA: "True"
       MEMORY: "6G"
@@ -40,6 +40,8 @@ services:
         McPaul10
         Skornexs
         j03rn
+      OPS: | 
+        Decoup
 
     labels:
       backup: true
