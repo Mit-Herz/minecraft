@@ -27,6 +27,7 @@ services:
       SPAWN_ANIMALS: "true"
       SPAWN_NPCS: "true"
       SPAWN_PROTECTION: 1
+      VIEW_DISTANCE: 16
       SEED: Neverendranche
       MODE: "survival"
       PVP: "true"
