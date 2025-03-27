@@ -17,11 +17,11 @@ services:
     networks:
       - proxy
     environment:
-      VERSION: 1.24.4
+      TYPE: "PAPER"
+      VERSION: 1.21.4
       MODRINTH_PROJECTS: |
         pl3xmap:1.21.4-523
         chunky:1.4.28
-      TYPE: "PAPER"
       EULA: "True"
       MEMORY: "6G"
       DIFFICULTY: "normal"
