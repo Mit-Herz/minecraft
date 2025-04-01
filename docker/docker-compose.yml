@@ -64,11 +64,11 @@ services:
       traefik.http.middlewares.neverendranche-https-redirect.redirectscheme.scheme: https
       
       traefik.http.routers.neverendranche.entrypoints: http
-      traefik.http.routers.neverendranche.rule: Host(`neverendranche.gamepus.net`)
+      traefik.http.routers.neverendranche.rule: Host(`minecraft.mit-herz.org`)
       traefik.http.routers.neverendranche.middlewares: neverendranche-https-redirect
 
       traefik.http.routers.neverendranche-secure.entrypoints: https
-      traefik.http.routers.neverendranche-secure.rule: Host(`neverendranche.gamepus.net`)
+      traefik.http.routers.neverendranche-secure.rule: Host(`minecraft.mit-herz.org`)
       traefik.http.routers.neverendranche-secure.tls: true
       traefik.http.routers.neverendranche-secure.tls.certresolver: http
       traefik.http.routers.neverendranche-secure.service: neverendranche
