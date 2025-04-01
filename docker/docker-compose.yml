@@ -40,7 +40,7 @@ services:
       MODE: "survival"
       PVP: "true"
       ALLOW_FLIGHT: "false"
-      SERVER_NAME: "Neverendranche"
+      SERVER_NAME: "MIT ♥"
       WHITELIST: |
         Decoup
         TheCroc420
@@ -51,6 +51,11 @@ services:
         j03rn
       OPS: | 
         Decoup
+        TheCroc420
+        KingIngeborg
+      MOTD: |
+        Map: https://minecraft.mit-herz.org/
+        Config: https://github.com/Mit-Herz/minecraft/edit/main/docker/docker-compose.yml
 
     labels:
       backup: true
