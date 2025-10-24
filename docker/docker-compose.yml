@@ -1,29 +1,23 @@
-networks:
-  proxy:
-    external: true
-
 services:
   minecraft:
-    image: itzg/minecraft-server:2025.3.0
+    image: itzg/minecraft-server:latest
     ports:
       - '25565:25565'
+      - '8080:8080'
     healthcheck:
       test: mc-health
       start_period: 1m
       interval: 5s
       retries: 20
     volumes:
-      - neverendranche:/data:rw
-    networks:
-      - proxy
+      - neverendranche_v3:/data:rw
     environment:
       TYPE: "PAPER"
-      VERSION: 1.21.4
+      VERSION: 1.21.10
       MODRINTH_PROJECTS: |
-        pl3xmap:1.21.4-523
-        chunky:1.4.28
+        pl3xmap:1.21.10-537
       EULA: "True"
-      MEMORY: "6G"
+      MEMORY: "24G"
       DIFFICULTY: "normal"
       ENABLE_QUERY: "false"
       MAX_PLAYERS: "10"
@@ -36,7 +30,7 @@ services:
       SPAWN_NPCS: "true"
       SPAWN_PROTECTION: 1
       VIEW_DISTANCE: 16
-      SEED: Neverendranche
+      SEED: Macheinfachohnemithezrirgendeinmuell
       MODE: "survival"
       PVP: "true"
       ALLOW_FLIGHT: "false"
@@ -49,32 +43,16 @@ services:
         McPaul10
         Skornexs
         j03rn
-      OPS: | 
-        Decoup
-        TheCroc420
-        KingIngeborg
+        DerSureno
+        Hatred_69
+        NussbaumVirus
+        Herobrine
+        Blaulix
+        aka_Konny
+      OPS: 
       MOTD: |
+        Version: 1.21.10
         Map: https://minecraft.mit-herz.org/
-        Config: https://github.com/Mit-Herz/minecraft/edit/main/docker/docker-compose.yml
-
-    labels:
-      backup: true
-      traefik.enable: true
-      
-      traefik.http.middlewares.neverendranche-https-redirect.redirectscheme.scheme: https
-      
-      traefik.http.routers.neverendranche.entrypoints: http
-      traefik.http.routers.neverendranche.rule: Host(`minecraft.mit-herz.org`)
-      traefik.http.routers.neverendranche.middlewares: neverendranche-https-redirect
-
-      traefik.http.routers.neverendranche-secure.entrypoints: https
-      traefik.http.routers.neverendranche-secure.rule: Host(`minecraft.mit-herz.org`)
-      traefik.http.routers.neverendranche-secure.tls: true
-      traefik.http.routers.neverendranche-secure.tls.certresolver: http
-      traefik.http.routers.neverendranche-secure.service: neverendranche
-      #traefik.http.routers.neverendranche-secure.middlewares: secHeaders@file
-      traefik.http.services.neverendranche.loadbalancer.server.port: 8080
-      traefik.docker.network: proxy
 
 volumes:
-  neverendranche:
+  neverendranche_v3:
