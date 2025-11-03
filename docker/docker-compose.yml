@@ -17,7 +17,7 @@ services:
       MODRINTH_PROJECTS: |
         pl3xmap:1.21.10-537
       EULA: "True"
-      MEMORY: "24G"
+      MEMORY: "28G"
       DIFFICULTY: "normal"
       ENABLE_QUERY: "false"
       MAX_PLAYERS: "10"
@@ -47,7 +47,6 @@ services:
         Hatred_69
         NussbaumVirus
         Herobrine
-        Blaulix
         aka_Konny
         _OnkelJimm
       OPS: 
