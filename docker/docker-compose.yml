@@ -1,6 +1,7 @@
 services:
   minecraft:
     image: itzg/minecraft-server:latest
+    restart: unless-stopped
     ports:
       - '25565:25565'
       - '8080:8080'
